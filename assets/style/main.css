@@ -1,0 +1,174 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Lightred: hsl(0, 100%, 67%);
+  --Orangeyyellow: hsl(39, 100%, 56%);
+  --Greenteal: hsl(166, 100%, 37%);
+  --Cobaltblue: hsl(234, 85%, 45%);
+  --Lightslateblue: hsl(252, 100%, 67%);
+  --Lightroyalblue: hsl(241, 81%, 54%);
+  --Violetblue: hsla(256, 72%, 46%, 1);
+  --Persianblue: hsla(241, 72%, 46%, 1);
+  --White: hsl(0, 0%, 100%);
+  --Paleblue: hsl(221, 100%, 96%);
+  --Lightlavender: hsl(241, 100%, 89%);
+  --Darkgrayblue: hsl(224, 30%, 27%);
+  --reactionClr: #fff2f2;
+  --memoryClr: #fdf7eb;
+  --verbalClr: #f5fdfb;
+  --visual: #f4f5fb;
+  --main-space: 30px;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 18px;
+}
+
+.parent {
+  width: 700px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.parent > div {
+  width: 50%;
+  padding: 30px;
+  border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .parent > div {
+    width: 100%;
+  }
+}
+.parent .left-container {
+  background-image: linear-gradient(180deg, var(--Lightslateblue), var(--Lightroyalblue));
+}
+.parent .left-container h3 {
+  text-align: center;
+  color: var(--Paleblue);
+  margin-bottom: var(--main-space);
+}
+.parent .left-container .circle {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  margin-bottom: var(--main-space);
+  background-color: antiquewhite;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(180deg, var(--Lightroyalblue), var(--Violetblue));
+}
+.parent .left-container .circle > * {
+  display: block;
+}
+.parent .left-container .circle > *:nth-child(1) {
+  font-size: 55px;
+  color: var(--Paleblue);
+}
+.parent .left-container .circle > *:nth-child(2) {
+  color: var(--Paleblue);
+}
+.parent .left-container .text {
+  text-align: center;
+}
+.parent .left-container .text h4 {
+  font-size: 25px;
+  color: var(--Paleblue);
+}
+.parent .left-container .text h4 + p {
+  color: var(--Lightlavender);
+  line-height: 1.6;
+  font-size: 14px;
+  max-width: 180px;
+  margin: auto;
+}
+.parent .right-container h3 {
+  margin-bottom: var(--main-space);
+}
+.parent .right-container ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.parent .right-container ul li .main-info {
+  display: flex;
+  align-items: center;
+}
+.parent .right-container ul li .main-info .icon {
+  margin-right: 10px;
+}
+.parent .right-container ul li .main-info .icon img {
+  width: 100%;
+}
+.parent .right-container ul li .main-info .catagory {
+  font-weight: bold;
+  font-size: 15px;
+}
+.parent .right-container ul li.Reaction {
+  background-color: var(--reactionClr);
+}
+.parent .right-container ul li.Reaction .main-info .catagory {
+  color: var(--Lightred);
+}
+.parent .right-container ul li.Memory {
+  background-color: var(--memoryClr);
+}
+.parent .right-container ul li.Memory .main-info .catagory {
+  color: var(--Orangeyyellow);
+}
+.parent .right-container ul li.Verbal {
+  background-color: var(--verbalClr);
+}
+.parent .right-container ul li.Verbal .main-info .catagory {
+  color: var(--Greenteal);
+}
+.parent .right-container ul li.Visual {
+  background-color: var(--visual);
+}
+.parent .right-container ul li.Visual .main-info .catagory {
+  color: var(--Cobaltblue);
+}
+.parent .right-container ul li .score-container {
+  color: var(--Lightlavender);
+}
+.parent .right-container ul li .score-container .score {
+  color: var(--Darkgrayblue);
+}
+.parent .right-container button {
+  display: block;
+  width: 100%;
+  margin: auto;
+  background-color: var(--Darkgrayblue);
+  margin-top: var(--main-space);
+  padding: 20px;
+  border-radius: 30px;
+  color: var(--memoryClr);
+  font-size: 17px;
+  border: none;
+  font-weight: 400;
+  cursor: pointer;
+}
+.parent .right-container button:hover {
+  background-image: linear-gradient(180deg, var(--Lightslateblue), var(--Lightroyalblue));
+}/*# sourceMappingURL=main.css.map */
